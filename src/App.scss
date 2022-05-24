@@ -1,0 +1,191 @@
+@media only screen and (min-width: 800px) {
+  .app-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+      width: 500px;
+    }
+    #editor {
+      width: 500px;
+    }
+  }
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.3);
+  border-radius: 10px;
+}
+
+
+/* App */
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+}
+
+.App {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #eeeeee;
+
+  .app-header {
+    padding: 40px 0 20px 0;
+  }
+
+  .app-body {
+    padding: 20px;
+    .container {
+      min-height: 50vh;
+      border-radius: 10px;
+      margin: 20px;
+      box-shadow: 0 1px 6px 0 rgba(38, 39, 39, 0.28);
+
+      .header {
+        padding: 10px 20px;
+        text-align: left;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    }
+
+    .editor-container {
+      background-color: #C6C1BE;
+      ::-webkit-scrollbar-thumb {
+        background: rgba(128, 128, 128, 0.3);
+        border-radius: 10px;
+      }
+      .editor-header {
+        background-color: #B3ADA8;
+      }
+      
+      #editor {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        resize: none;
+        height: 408.4px;
+        padding: 8px;
+        display: block;
+        margin: 0;
+        width: 100%;
+      }
+    }
+
+    .preview-container {
+      background-color: #8F857D;
+      text-align: left;
+      overflow-wrap: break-word;
+      
+      ::-webkit-scrollbar-thumb {
+        background: rgba(330, 330, 330, 0.3);
+        border-radius: 10px;
+      }
+      .preview-header {
+        background-color: #837A72;
+      }
+
+      #preview {
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 408.4px;
+        padding: 8px;
+
+        h1 {
+          border-bottom: 2px solid black;
+        }
+
+        h2 {
+          border-bottom: 1px solid black;
+        }
+
+        p {
+          code {
+            padding: 3px;
+          }
+        }
+
+        code {
+          background: white;
+          font-size: 0.875rem;
+          font-weight: bold;
+        }
+
+        pre {
+          display: block;
+          overflow: auto;
+          background: white;
+          padding: 5px;
+          line-height: 1.2;
+        }
+
+        blockquote {
+          border-left: 3px solid black;
+          padding-left: 5px;
+          margin-left: 25px;
+        }
+
+        table {
+          border-collapse: collapse;
+        }
+
+        th, td {
+          border: 2px solid black;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+
+        img {
+          display: block;
+          max-width: 90%;
+          margin: 2rem auto;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
